@@ -1,42 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
-import nasaLogo from "../../public/nasa-logo-web-rgb.png"
 
 
-export default function header(){
+
+export default function Header(){
 
     
-
+    
 
 
     return(
         <div>
-            <div className='header-container'>
+            <div >
                 <h1>Astronomy Photo Of The Day</h1>
             </div>
-            <div className='logo'>
-                <img src={nasaLogo} alt="nasa logo"/>
+            <div>
+                <img src="nasa-logo-web-rgb.png" height="150" width="300" alt="nasa logo"/>
             </div>
          </div>
     )   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
 
 
 }

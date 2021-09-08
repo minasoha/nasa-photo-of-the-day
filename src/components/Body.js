@@ -1,31 +1,21 @@
-import React from "react";
-import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 
-export default function (props){
+export default function Body(props){
 
-    const { date, explanation, hdurl, title } = props;
+
+    const { date, explanation, title, url} = props;
+
 
     return (
-
-        <div className="bodyContainer">
-            <div className="leftContent">
-                <h3>{title}</h3>
-                <p>{date}</p>
-                <p>Explanation: {explanation}</p>
-            </div>
-            <div className="rightContent">
-                <img src={hdurl} alt="Astronomy pic of the day"/>
-            </div>
-
+        <div>
+            <h3>{title}</h3>
+            <p>{date}</p>
+            <p>Explanation: {explanation}</p>
+            <img src={url} alt="Astronomy pic of the day"/>
 
         </div>
     )
-
-
-
-
-
 
 
 
