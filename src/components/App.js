@@ -1,5 +1,11 @@
 import React from "react";
-import "./App.css";
+import axios from "axios";
+import Body from "./Body";
+import Footer from "./Footer";
+import header from "./Header"
+import "../App.css";
+
+
 
 function App() {
   return (
